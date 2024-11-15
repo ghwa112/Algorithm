@@ -38,7 +38,7 @@ public class Main {
 					}
 					if (cnt > 2) {
                         result++;
-                        continue; // 다음 셀로 넘어감
+                    // 다음 셀로 넘어감
                     }
 					cnt = 0;
 				}
