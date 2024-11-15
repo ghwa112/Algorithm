@@ -5,6 +5,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.Arrays;
 
+
+
+
 public class Main {
     public static void main(String[] args) {
     	
@@ -41,6 +44,7 @@ public class Main {
                          if (arr[j] == b) {
                         	 exist = true;
                         	 result = j+1;
+                        	 break;
                          }
                      }
                 	 if(exist)
@@ -54,6 +58,7 @@ public class Main {
                 	 for(int k=s-1; k<e; k++) {
                 		 System.out.print(arr[k]+" ");
                 	 }
+                	 System.out.println();
                 	 break;
                  }
                  
