@@ -19,10 +19,10 @@ public class Main {
              for (char c : chars) {
                  switch(c){
                  case 'R':
-                	 dirNum += 1;
+                	 dirNum = (dirNum + 1) % 4;
                 	 break;
                  case 'L':
-                	 dirNum -= 1;
+                	 dirNum = (dirNum - 1 + 4) % 4;
                 	 break;
                  case 'F':
                 	 nx = nx + dx[dirNum];
