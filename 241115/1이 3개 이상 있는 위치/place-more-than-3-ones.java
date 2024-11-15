@@ -4,49 +4,36 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-    public static boolean inRange(int x, int y, int n) {
-		return (0 <= x && x < n && 0 <= y && y < n);
-	}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
-	public static void main(String[] args) {
+        int n = Integer.parseInt(br.readLine());
+        int[][] arr = new int[n + 2][n + 2]; // 경계를 포함한 배열 선언
 
-		int[] dx = new int[] { 0, 1, 0, -1 };
-		int[] dy = new int[] { 1, 0, -1, 0 };
-		int cnt = 0;
-		int result = 0;
+        for (int i = 1; i <= n; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 1; j <= n; j++) {
+                arr[i][j] = Integer.parseInt(st.nextToken());
+            }
+        }
 
-		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int[] dx = {1, 0, -1, 0};
+        int[] dy = {0, -1, 0, 1};
+        int result = 0;
 
-			String line1 = br.readLine();
-			int n = Integer.parseInt(line1);
-			int[][] arr = new int[n][n];
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                int cnt = 0;
+                for (int dir = 0; dir < 4; dir++) {
+                    int nx = i + dx[dir];
+                    int ny = j + dy[dir];
+                    if (arr[nx][ny] == 1) cnt++;
+                }
+                if (cnt >= 3) result++;
+            }
+        }
 
-			for (int i = 0; i < n; i++) {
-				String line = br.readLine();
-				StringTokenizer str = new StringTokenizer(line);
-				for (int j = 0; j < n; j++) {
-					arr[i][j] = Integer.parseInt(str.nextToken());
-				}
-			}
-			for (int i = 0; i < n; i++) {
-				for (int j = 0; j < n; j++) {
-					for (int dirNum = 0; dirNum < 4; dirNum++) {
-						int nx = i + dx[dirNum], ny = j + dy[dirNum];
-						if (inRange(nx, ny, n) && arr[nx][ny] == 1)
-							cnt++;
-					}
-					if (cnt > 2) {
-                        result++;
-                    // 다음 셀로 넘어감
-                    }
-					cnt = 0;
-				}
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		System.out.println(result);
-	}
+        System.out.println(result);
+    }
 }
