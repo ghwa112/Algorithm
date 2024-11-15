@@ -12,8 +12,7 @@ public class Main {
              int nx=0, ny=0;
              int dirNum = 3;
 
-             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+              BufferedReader br = new BufferedReader(new InputStreamReader(System.in), 1024 * 1024);
              String line1 = br.readLine(); // 문자열 입력
              char[] chars = line1.toCharArray(); // 문자열을 문자 배열로 변환
              
