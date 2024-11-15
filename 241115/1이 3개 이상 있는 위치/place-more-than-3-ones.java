@@ -36,8 +36,10 @@ public class Main {
 						if (inRange(nx, ny, n) && arr[nx][ny] == 1)
 							cnt++;
 					}
-					if (cnt > 2)
-						result++;
+					if (cnt > 2) {
+                        result++;
+                        continue; // 다음 셀로 넘어감
+                    }
 					cnt = 0;
 				}
 			}
