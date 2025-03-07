@@ -6,14 +6,18 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int d = sc.nextInt();
-        
-        int start = a * 60 + b;
-        int end = c * 60 + d;
 
-        
+        int cnt = 0;
+        while (a != c || b != d){
 
-        System.out.println(end-start);
-
-
+            b++;
+            cnt++;
+            if(b==60){
+                a++;
+                b=0;
+            }
+            
+        }
+        System.out.println(cnt);
     }
 }
