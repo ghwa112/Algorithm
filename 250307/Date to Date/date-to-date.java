@@ -9,8 +9,8 @@ public class Main {
         int d2 = sc.nextInt();
         
 
-        int[] dayOfMonth = new int[]{0,31,28,31,30,31,30,31,30,31,30,31,30};
-        int count = 0;
+        int[] dayOfMonth = new int[]{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int count = 1;
 
         while(true){
             if(m1 == m2 && d1 == d2)
