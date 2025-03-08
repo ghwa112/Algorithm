@@ -5,7 +5,7 @@ public class Main {
         int N = sc.nextInt();
         int K = sc.nextInt();
 
-        int[] array = new int[N];
+        int[] array = new int[N+1];
 
         for (int i = 0; i < K; i++) {
             int A = sc.nextInt();
