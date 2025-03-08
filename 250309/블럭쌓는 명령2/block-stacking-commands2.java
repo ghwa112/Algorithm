@@ -19,7 +19,7 @@ public class Main {
             
         }
 
-        for(int i = 0; i < K; i++){
+        for(int i = 0; i < N; i++){
             ans = Math.max(ans,array[i]);
         }
 
