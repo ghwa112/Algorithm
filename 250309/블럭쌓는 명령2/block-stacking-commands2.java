@@ -5,7 +5,7 @@ public class Main {
         int N = sc.nextInt();
         int K = sc.nextInt();
 
-        int[] array = new int[N+1];
+        int[] array = new int[N];
         int ans = 0;
         
         for (int i = 0; i < K; i++) {
@@ -16,6 +16,10 @@ public class Main {
                 array[j]++;
             }
 
+            
+        }
+
+        for(int i = 0; i < K; i++){
             ans = Math.max(ans,array[i]);
         }
 
