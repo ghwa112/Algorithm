@@ -11,8 +11,8 @@ public class Main {
             int A = sc.nextInt();
             int B = sc.nextInt();
 
-            for(int j = A; j<=B;j++ ){
-                array[i]++;
+            for(int j = A; j<=B; j++ ){
+                array[j-1]++;
             }
         }
 
