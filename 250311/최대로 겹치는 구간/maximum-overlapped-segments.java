@@ -6,11 +6,12 @@ public class Main {
         int[] x1 = new int[n];
         int[] x2 = new int[n];
 
-        int[] array = new int[100];
+        int[] array = new int[200];
         int ans = 0;
+        int OFFSET = 100;
         for (int i = 0; i < n; i++) {
-            x1[i] = sc.nextInt();
-            x2[i] = sc.nextInt();
+            x1[i] = sc.nextInt() + OFFSET;
+            x2[i] = sc.nextInt() + OFFSET;
             for(int j = x1[i]; j< x2[i]; j++){
                 array[j]++;
                 ans = Math.max(ans,array[j]);
