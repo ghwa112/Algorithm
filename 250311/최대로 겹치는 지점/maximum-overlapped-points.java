@@ -8,7 +8,7 @@ public class Main {
 
         int ans = 0;
 
-        int[] array = new int[100];
+        int[] array = new int[101];
         for (int i = 0; i < n; i++) {
             start[i] = sc.nextInt();
             end[i] = sc.nextInt();
