@@ -12,7 +12,7 @@ public class Main {
         int rect2_x2 = sc.nextInt();
         int rect2_y2 = sc.nextInt();
 
-        int MAX = 2000;
+        int MAX = 2001;
         int OFFSET = 1000;
 
         int[][] square = new int[MAX][MAX];
