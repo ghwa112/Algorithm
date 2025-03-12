@@ -3,8 +3,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int OFFSET  = 100;
-        int[] array = new int[201];
+        int OFFSET  = 1000;
+        int[] array = new int[2001];
 
         for (int i = 0; i < N; i++) {
             int x = sc.nextInt();
@@ -18,12 +18,11 @@ public class Main {
                 OFFSET--;
                 }
             }
-            
         }
 
         int cnt = 0;
 
-        for(int i = 0; i< 201; i++){
+        for(int i = 0; i< 2001; i++){
             if(array[i]>1)
                 cnt++;
         }
