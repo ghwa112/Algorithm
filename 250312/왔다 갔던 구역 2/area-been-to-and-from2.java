@@ -7,7 +7,6 @@ public class Main {
         int[] array = new int[2002];
 
         
-
         for (int i = 0; i < N; i++) {
             int x = sc.nextInt();
             char dir = sc.next().charAt(0);
@@ -26,7 +25,7 @@ public class Main {
         for(int i = 0; i< 2001; i++){
             if(array[i]>1){
                 cnt++;
-                //System.out.println(i);
+                System.out.println(i-1000);
             }
                 
         }
