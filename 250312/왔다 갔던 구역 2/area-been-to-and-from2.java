@@ -26,7 +26,7 @@ public class Main {
         for(int i = 0; i< 2001; i++){
             if(array[i]>1){
                 cnt++;
-                System.out.println(i);
+                //System.out.println(i);
             }
                 
         }
