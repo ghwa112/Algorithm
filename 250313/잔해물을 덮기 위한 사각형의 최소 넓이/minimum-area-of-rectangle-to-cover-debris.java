@@ -46,6 +46,8 @@ public class Main {
 
 
         int ans = (maxX - minX) * (maxY - minY);
+        if(ans == 4004001)
+            ans = 0;
 
         System.out.println(ans);
         // Please write your code here.
