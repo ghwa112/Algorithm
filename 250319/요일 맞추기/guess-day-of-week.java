@@ -21,17 +21,18 @@ public class Main {
         }
 
         if(dayOfFirst<dayOfSecond){
-            while(true){
-            if(m1 == m2 && d1 == d2)
-                break;
-            if( dayOfMonth[m1-1] == d1){
-                m1++;
-                d1 = 1;
-            }
-            day = day % 7;
-            day++;
-            d1++;
-            } 
+            day = (dayOfSecond - dayOfFirst ) % 7;
+            // while(true){
+            // if(m1 == m2 && d1 == d2)
+            //     break;
+            // if( dayOfMonth[m1-1] == d1){
+            //     m1++;
+            //     d1 = 1;
+            // }
+            // day = day % 7;
+            // day++;
+            // d1++;
+            // } 
         }
 
 
