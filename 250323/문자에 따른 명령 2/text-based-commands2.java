@@ -20,7 +20,7 @@ public class Main {
                 x = x + dx[dirNum];
                 y = y + dy[dirNum];
             }else if(direction[i] == 'R'){
-                dirNum = (dirNum + 1) % 3; 
+                dirNum = (dirNum + 1) % 4; 
             }else if(direction[i] == 'L'){
                 dirNum = (dirNum + 3) % 4; 
             }
