@@ -31,15 +31,13 @@ public class Main {
 
                     cnt += arr[nx][ny];
                     
-                    if(cnt == 3)
+                    if(cnt == 3){
                         ans++;
+                    } 
                 }
                 cnt = 0;
             }
         }
-
         System.out.println(ans);
-
-       
     }
 }
