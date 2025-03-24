@@ -33,6 +33,7 @@ public class Main {
                     
                     if(cnt == 3){
                         ans++;
+                        break;
                     } 
                 }
                 cnt = 0;
