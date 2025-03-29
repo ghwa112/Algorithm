@@ -33,8 +33,6 @@ public class Main {
                 x = x + dx[3];
                 y = y + dy[3];
                 }
-                
-
                 ans++;
 
                 if(x == 0 && y ==0){
@@ -42,9 +40,13 @@ public class Main {
                 }
             }
             if(x == 0 && y ==0){
-                  break;   
-                }
+                break;   
+            }
+            if(i == n-1){
+                ans = -1;
+            }
         }
+        
         System.out.println(ans);
         
     }
