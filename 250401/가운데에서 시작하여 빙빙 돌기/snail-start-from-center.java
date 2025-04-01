@@ -13,7 +13,9 @@ public class Main {
         int dirNum = 0, x = n/2, y = n/2;
         int roof = 1 , k = 1;
         while(true){
+            
             map[x][y] = k;
+            if(n == 1) break;
             for(int i = 0; i < 2; i++){
                 for(int j = 0; j < roof; j++){
                     x = x + dx[dirNum];
