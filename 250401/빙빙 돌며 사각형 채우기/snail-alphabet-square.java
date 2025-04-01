@@ -13,11 +13,11 @@ public class Main {
 
         int[][] map = new int[n][m];
         
-        int dirNum = 0, x = 0, y = 0;
+        int dirNum = 0, x = 0, y = 0, k = 0;
 
         for(int i = 1; i <= n*m; i++){
-            i %= 26;
-            map[x][y] = i;
+            k = (k % 26) + 1;
+            map[x][y] = k;
 
             int nx = x + dx[dirNum];
             int ny = y + dy[dirNum];
@@ -35,7 +35,7 @@ public class Main {
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
-                System.out.print((char) (64 + map[i][j]) + " ");
+                System.out.print((char) (64+map[i][j]) + " ");
             }
             System.out.println();
         }
