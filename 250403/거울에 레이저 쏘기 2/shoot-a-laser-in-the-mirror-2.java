@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class Main {
 
@@ -62,22 +63,17 @@ public class Main {
 
         return ans;
     }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
+     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
         char[][] grid = new char[n][n];
 
         for (int i = 0; i < n; i++) {
-            String s = sc.next();
-            for (int j = 0; j < n; j++) {
-                grid[i][j] = s.charAt(j);
-            }
+            String s = br.readLine();
+            grid[i] = s.toCharArray();  // 속도면에서 아주 효율적
         }
-        int startNum = sc.nextInt();
-        int ans = count(grid,n,startNum);
 
-        System.out.println(ans);
-       
+        int startNum = Integer.parseInt(br.readLine());
+        System.out.println(count(grid, n, startNum));
     }
 }
