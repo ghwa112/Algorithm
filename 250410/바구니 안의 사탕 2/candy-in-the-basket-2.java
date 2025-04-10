@@ -17,7 +17,7 @@ public class Main {
 
         int max = Integer.MIN_VALUE;
 
-        for(int i = 0; i<100; i++){
+        for(int i = 0; i<101; i++){
             int count = 0;
             for(int j = i-k; j <= i+k; j++){
                 
