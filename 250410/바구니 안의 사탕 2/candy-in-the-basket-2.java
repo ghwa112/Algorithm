@@ -22,7 +22,7 @@ public class Main {
             for(int j = i-k; j <= i+k; j++){
                 
                 
-                if(j>0 && j<101){
+                if(j>=0 && j<101){
                     count += map[j];
                 }
             }
