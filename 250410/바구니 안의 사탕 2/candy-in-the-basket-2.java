@@ -6,7 +6,7 @@ public class Main {
         int k = sc.nextInt();
         int candies = 0;
         int positions = 0;
-        int[] map = new int[100];
+        int[] map = new int[101];
         for (int i = 0; i < n; i++) {
  
             candies = sc.nextInt();
