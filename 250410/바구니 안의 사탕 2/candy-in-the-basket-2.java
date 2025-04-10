@@ -12,7 +12,7 @@ public class Main {
             candies = sc.nextInt();
             positions = sc.nextInt();
 
-            map[positions] = candies; 
+            map[positions] += candies; 
         }
 
         int max = Integer.MIN_VALUE;
